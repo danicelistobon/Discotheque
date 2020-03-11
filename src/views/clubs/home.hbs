@@ -1,0 +1,166 @@
+<header>
+    <div class="logoc">
+        <a href="/clubs" style="display: block; height: 100%"></a>
+    </div>
+    <h1>Discotheque</h1>
+    <div class="profile">
+        <a href=# style="display: block; height: 80px; width: 80px"></a>
+        <div class="popover">
+            <ul>
+                <li><a href=#>Your profile</a></li>
+                <li class="borde"><a href=#>Create a club</a></li>
+                <li><a href="/">Sign out</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="cont-filter">
+    <form action="" autocomplete="off">
+        <input type="text" class="filter" id="filter" placeholder="Search">
+    </form>
+    <div class="categories" id="categories">
+        <a href="#" class="activo">ALL</a>
+        <a href="#">DISCOTECAS</a>
+        <a href="#">FONDAS</a>
+        <a href="#">BARES</a>
+    </div>
+</div>
+
+        <div class="cont-clubs">
+            <section class="grid" id="grid">
+                {{#each clubs}}
+                    <div class="item"
+                         data-categoria={{club_type}}
+                         data-etiquetas="{{name}}{{musical_genres}}{{rooms}}{{neighborhood_city}}{{club_type}}{{keywords}}"
+                         >
+                        <div class="item-contenido">
+                            <h1><a href="#">{{name}}</a></h1>
+                            <div class="photo">
+                                <img src="images/portada2.jpg" alt="" width="310px">
+                            </div>
+                            <h2>Musical genres</h2>
+                            <p>{{musical_genres}}</p>
+                            <h2>Rooms</h2>
+                            <p>{{rooms}}</p>
+                            <h2>Location</h2>
+                            <p>{{neighborhood_city}}</p>
+                            <p class="timeago">{{timeago created_at}}</p>
+                    </div>
+                </div>
+                {{/each}}
+                <div class="item"
+                     data-categoria="discotecas"
+                     data-etiquetas="industry reggaeton pop tribal house terraza electronica"
+                     >
+                    <div class="item-contenido">
+                        <h1><a href="#">Industry Club</a></h1>
+                        <div class="photo">
+                            <img src="images/Industry.jpg" alt="" width="310px">
+                        </div>
+                        <h2>Musical genres</h2>
+                        <p>Reggaeton, Pop, Tribal house</p>
+                        <h2>Rooms</h2>
+                        <p>Crossover room, Terraza electro</p>
+                        <h2>Location</h2>
+                        <p>Barrio Colombia, Medellin</p>
+                    </div>
+                </div>
+                <div class="item"
+                     data-categoria="discotecas"
+                     data-etiquetas="purple reggaeton pop electronica crossover salsa merengue plancha bachata urbano lupe terraza ibiza"
+                     >
+                    <div class="item-contenido">
+                       <h1>Purple Club</h1>
+                        <div class="photo">
+                            <img src="images/Purple.jpg" alt="" width="310px">
+                        </div>
+                        <h2>Musical genres</h2>
+                        <p>Reggaeton, Pop, Electronica, Crossover</p>
+                        <h2>Rooms</h2>
+                        <p>Urbano, La Lupe fonda, Terraza Ibiza</p>
+                        <h2>Location</h2>
+                        <p>La 33, Medellin</p> 
+                    </div>
+                </div>
+                <div class="item"
+                     data-categoria="discotecas"
+                     data-etiquetas="viva reggaeton pop electronica crossover salsa merengue plancha bachata latin"
+                     >
+                    <div class="item-contenido">
+                        <h1>Viva Auditorium</h1>
+                        <div class="photo">
+                            <img src="images/Viva.jpg" alt="" width="310px">
+                        </div>
+                        <h2>Musical genres</h2>
+                        <p>Reggaeton, Pop, Electronica, crossover</p>
+                        <h2>Rooms</h2>
+                        <p>Main stage, Latin room</p>
+                        <h2>Location</h2>
+                        <p>CC El Diamante, Medellin</p>
+                    </div>
+                </div>
+                <div class="item"
+                     data-categoria="bares"
+                     data-etiquetas="jagerhaus jager pop rock"
+                     >
+                    <div class="item-contenido">
+                        <h1>Jagerhaus</h1>
+                        <div class="photo">
+                            <img src="images/Jagerhaus.jpg" alt="" width="310px">
+                        </div>
+                        <h2>Musical genres</h2>
+                        <p>Rock, Pop</p>
+                        <h2>Rooms</h2>
+                        <p>Main room</p>
+                        <h2>Location</h2>
+                        <p>Barrio Provenza, Medellin</p>
+                    </div>
+                </div>
+                <div class="item"
+                     data-categoria="discotecas"
+                     data-etiquetas="oraculo reggaeton pop house plancha clasicos drag poperreo uranus madame melano"
+                     >
+                    <div class="item-contenido">
+                        <h1>Club Oraculo</h1>
+                        <div class="photo">
+                            <img src="images/Oraculo.jpg" alt="" width="310px">
+                        </div>
+                        <h2>Musical genres</h2>
+                        <p>Reggaeton, Pop, House, Plancha y clasicos</p>
+                        <h2>Rooms</h2>
+                        <p>POPerreo, Uranus, Madame Melano</p>
+                        <h2>Location</h2>
+                        <p>Barrio Provenza, Medellin</p>
+                    </div>
+                </div>
+                <div class="item"
+                     data-categoria="fondas"
+                     data-etiquetas="ruana juana reggaeton pop electronica crossover salsa merengue bachata vallenato despecho"
+                     >
+                    <div class="item-contenido">
+                        <h1>La Ruana de Juana</h1>
+                        <div class="photo">
+                            <img src="images/Ruana.jpg" alt="" width="310px">
+                        </div>
+                        <h2>Musical genres</h2>
+                        <p>Crossover</p>
+                        <h2>Rooms</h2>
+                        <p>Main room</p>
+                        <h2>Location</h2>
+                        <p>Parque Lleras, Medellin</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+<footer>
+    <div class="github"><a href="https://github.com/danicelistobon" style="display: block; height: 100%" target="_blank"></a></div>
+    <div class="twitter"><a href="https://twitter.com/danicelistobon" style="display: block; height: 100%" target="_blank"></a></div>
+    <div class="linkedin"><a href="https://www.linkedin.com/in/danicelistobon/" style="display: block; height: 100%" target="_blank"></a></div>
+    <div class="holberton"><a href="https://www.holbertonschool.com" style="display: block; height: 100%" target="_blank"></a></div>
+</footer>
+        
+<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+<script src="js/main.js"></script>
