@@ -1,0 +1,167 @@
+.bgf {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #00C3FF;
+    background-size: cover;
+    background-position: center;
+    transition: all .1s ease-in-out;
+    background-image: url(../images/Portada3.jpg);
+    animation: bgf 15s infinite linear;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    overflow-y: hidden;
+}
+.bgf .cont-d {
+    min-width: 400px;
+    margin: 0;
+    padding: 0;
+    width: 40%;
+    height: 100%;
+    background-color: rgba(0, 30, 40, .2);
+}
+.bgf .cont-logo-form {
+    min-width: 400px;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+    height: 100%;
+    background-color: rgba(0, 30, 40, .2);
+}
+.bgf .cont-logof {
+    width: 140px;
+    height: 140px;
+    float: right;
+}
+.bgf .img-d {
+    position: relative;
+    margin: 0;
+    margin-left: -1px;
+    padding: 0;
+    background: url(../images/d1.png) no-repeat;
+    background-size: contain;
+    height: 100vh;
+    opacity: 7%;
+}
+.bgf .logof {
+    background-image: url(../images/logo1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80px;
+    width: 80px;
+    position: relative;
+    align-items: center;
+    float: right;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+@keyframes bgf{
+    0%{
+        background-image: url(../images/Portada2.jpg);
+    }
+    50%{
+        background-image: url(../images/Portada2.jpg);
+    }
+    51%{
+        background-image: url(../images/Portada4.jpg);
+    }
+    100%{
+        background-image: url(../images/Portada4.jpg);
+    }
+}
+.bgf .table {
+    margin: 0;
+    padding: 0;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    opacity: 90%;
+}
+.bgf .table h1 {
+    text-align: center;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    color: #00AAFF;
+}
+.bgf .one {
+    margin: 30px 30px 0;
+}
+.bgf form {
+    width: 400px;
+    background: #FFFFFF;
+    padding: 40px 0;
+    box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.6);
+    border-radius: 10px;
+}
+.bgf .form {
+    width: 100%;
+    margin: auto;
+}
+.bgf form .grupo {
+    position: relative;
+    margin: 30px;
+}
+.bgf input {
+    background: none;
+    color: #484848;
+    font-size: 18px;
+    padding: 10px 0;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px #CCCCCC solid;
+}
+.bgf input:focus {
+    outline: none;
+    color: #5E5D5D;
+}
+.bgf label {
+    color: #969696;
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+}
+.bgf input:focus~label, input:valid~label{
+    top: -14px;
+    font-size: 12px;
+    color: #00AAFF;
+}
+.bgf .barra {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.bgf .barra::before {
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #ffff1c, #00c3ff);
+    transition: 0.3s ease width;
+    left: 0;
+}
+.bgf input:focus~.barra::before {
+    width: 100%;
+}
+.bgf button {
+    background: #00c3ff;
+    background: -webkit-linear-gradient(to right, #ffff1c, #00c3ff);
+    background: linear-gradient(to right, #ffff1c, #00c3ff);
+    border: none;
+    display: block;
+    width: 80%;
+    height: 40px;
+    margin: 10px auto;
+    color: #FFFFFF;
+    font-size: 19px;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.3);
+}

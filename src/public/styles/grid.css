@@ -1,0 +1,63 @@
+.cont-clubs {
+    max-width: 1250px;
+    margin: auto;
+}
+.cont-clubs .grid {
+	position: relative;
+	width: 100%;
+	opacity: 0;
+	transition: opacity 0.8s linear 1s;
+}
+.cont-clubs .grid.imagenes-cargadas {
+	opacity: 1;
+}
+.cont-clubs .grid .item {
+	position: absolute;
+	display: block;
+	padding: 20px;
+	margin: 25px;
+	width: 320px;
+    border: 1px #DDDDDD solid;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.3);
+}
+.cont-clubs .grid .item-contenido {
+	position: relative;
+}
+.cont-clubs .grid .item img {
+	width: 100%;
+	vertical-align: top;
+}
+.cont-clubs .item-contenido h1 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+.cont-clubs .item-contenido h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+.cont-clubs .photo {
+    border-top: 1px #DDDDDD solid;
+    border-bottom: 1px #DDDDDD solid;
+    display: flex;
+    justify-content: center;   
+}
+.cont-clubs .photo img {
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.6);
+}
+.cont-clubs h1 a {
+    text-decoration: none;
+    color: #484848;
+}
+.cont-clubs h1 a:hover {
+    color: #00C3FF;
+    transition: color 0.8s;
+}
+.cont-clubs .timeago {
+    float: right;
+    font-size: 12px;
+    color: #999999;
+}

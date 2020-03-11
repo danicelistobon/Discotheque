@@ -1,0 +1,105 @@
+.cont-add-club {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+.cont-add-club h1 {
+    text-align: center;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    color: #484848;
+}
+.cont-add-club form {
+    width: 500px;
+    background: #FFFFFF;
+    margin: auto;
+    padding: 40px 0;
+    box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.3);
+    border-radius: 15px;
+}
+.cont-add-club .form {
+    width: 100%;
+    margin: auto;
+}
+.cont-add-club form .grupo{
+    position: relative;
+    margin: 30px;
+}
+select {
+    width: 50%;
+    height: 40px;
+    margin: 5px 30px;
+    border: none;
+    border-bottom: 1px #CCCCCC solid;
+    color: #484848;
+    font-size: 17px;
+}
+select:focus {
+    outline: none;
+}
+.cont-add-club input, textarea {
+    background: none;
+    color: #484848;
+    font-size: 17px;
+    padding: 10px 0;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px #CCCCCC solid;
+}
+.cont-add-club input:focus, textarea:focus {
+    outline: none;
+    color: #484848;
+}
+.cont-add-club label {
+    color: #484848;
+    font-size: 18px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+}
+.cont-add-club input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label{
+    top: -14px;
+    font-size: 12px;
+    color: #999999;
+}
+.cont-add-club .club_type {
+    font-size: 12px;
+    color: #999999;
+    margin: 0 0 0 35px;
+}
+.cont-add-club .barra {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.cont-add-club .barra::before {
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #ffff1c, #00c3ff);
+    transition: 0.3s ease width;
+    left: 0;
+}
+.cont-add-club input:focus~.barra::before, textarea:focus~.barra::before {
+    width: 100%;
+}
+.cont-add-club button {
+    background: #00c3ff;
+    background: -webkit-linear-gradient(to right, #ffff1c, #00c3ff);
+    background: linear-gradient(to right, #ffff1c, #00c3ff);
+    border: none;
+    display: block;
+    width: 80%;
+    height: 40px;
+    margin: 10px auto;
+    color: #FFFFFF;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.3);
+}

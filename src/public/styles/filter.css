@@ -1,0 +1,40 @@
+.cont-filter {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto 10px;
+}
+.cont-filter form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.cont-filter .filter {
+    width: 60%;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    border-radius: 100px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    background-color: #EBEBEB;
+}
+.cont-filter input:focus {
+    outline: none;
+}
+.cont-filter .categories {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+.cont-filter .categories a {
+    text-decoration: none;
+    color: #ABABAB;
+    margin: 10px 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.cont-filter .categories a.activo {
+    color: #484848;
+    font-weight: 500;
+}

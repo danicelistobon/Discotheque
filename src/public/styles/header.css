@@ -1,0 +1,72 @@
+header {
+    background-color: #FFFFFF;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px #EBEBEB solid;
+    box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.3);
+}
+header .logoc {
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 55px;
+    width: 55px;
+    position: relative;
+    align-items: center;
+    margin-left: 20px;
+}
+header .profile {
+    background-image: url(../images/profile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    align-items: center;
+    margin-right: 20px;
+    float: left;
+}
+header h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+header .popover {
+    background-color: #FAFAFA;
+    width: 120px;
+    border: 1px #DDDDDD solid;
+    border-radius: 10px;
+    margin-top: -38px;
+    margin-left: -100px;
+    padding: 10px;
+    display: none;
+    box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.3);
+}
+header .popover li {
+    margin: 0;
+    padding: 7px 15px;
+    list-style-type: none;
+}
+header .popover ul {
+    padding: 0;
+    margin: 0;
+}
+header .popover a {
+    text-decoration: none;
+    color: #484848;
+}
+header .popover a:hover {
+    color: #00C3FF;
+    transition: color 0.8s;
+}
+header .profile:hover .popover {
+    display: block;
+    transition: 0.9s all;
+}
+header .borde {
+    border-top: 1px #DDDDDD solid;
+    border-bottom: 1px #DDDDDD solid;
+}

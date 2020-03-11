@@ -1,0 +1,53 @@
+footer{
+    background-color: #FFFFFF;
+    height: 70px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    border-top: 1px #EBEBEB solid;
+    box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.3);
+}
+footer .github{
+    background-image: url(../images/logo_github.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 35px;
+    width: 35px;
+    position: relative;
+    align-items: center;
+    margin: 10px;
+}
+footer .twitter{
+    background-image: url(../images/logo_twitter.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 35px;
+    width: 35px;
+    position: relative;
+    align-items: center;
+    margin: 10px;
+}
+footer .linkedin{
+    background-image: url(../images/logo_linkedin.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 35px;
+    width: 35px;
+    position: relative;
+    align-items: center;
+    margin: 10px;
+}
+footer .holberton{
+    background-image: url(../images/logo_holberton.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 35px;
+    width: 35px;
+    position: relative;
+    align-items: center;
+    margin: 10px;
+}
