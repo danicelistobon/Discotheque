@@ -1,0 +1,108 @@
+.cont-user {
+    width: 100%;
+    min-height: calc(100vh - 155px);
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    padding: 0;
+}
+.cont-user .cont-user-bar {
+    width: 250px;
+    min-height: 100%;
+    border-right: 1px #EBEBEB solid;
+}
+.cont-user .cont-user-clubs {
+    width: calc(100% - 251px);
+    display: flex;
+    flex-flow: column wrap;
+}
+.cont-user .cont-fllw-clubs {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+.cont-user .cont-created-clubs {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+.cont-user .cont-user-bar h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px;
+}
+.cont-user .cont-user-clubs h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px;
+}
+.cont-user a {
+    text-decoration: none;
+    color: #484848;
+    padding-left: 25px;
+}
+.cont-user a:hover {
+    color: #00C3FF;
+    transition: color 0.8s;
+}
+.cont-user li {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+h3 {
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+}
+.cont-user .cont-user-clubs .table {
+    width: 300px;
+    border: 1px #DDDDDD solid;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.3);
+    display: inline-block;
+    margin: 0 30px;
+    margin-bottom: 60px;
+}
+.cont-user .cont-user-clubs .table img {
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.6);
+}
+.cont-user .table .botones {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.cont-user .table button.edit {
+    width: 100px;
+    height: 30px;
+    border: 1px #DDDDDD solid;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.3);
+    margin-left: 40px;
+}
+.cont-user .table button.edit:hover {
+    cursor: pointer;
+    border: none;
+    background: #00C3FF;
+    color: #FFFFFF;
+}
+.cont-user .table button.delete {
+    width: 100px;
+    height: 30px;
+    border: 1px #DDDDDD solid;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.3);
+    margin-left: 15px;
+}
+.cont-user .table button.delete:hover {
+    cursor: pointer;
+    border: none;
+    background: #FF0000;
+    color: #FFFFFF;
+}
