@@ -21,9 +21,9 @@
     </form>
     <div class="categories" id="categories">
         <a href="#" class="activo">ALL</a>
-        <a href="#">DISCOTECAS</a>
-        <a href="#">FONDAS</a>
-        <a href="#">BARES</a>
+        <a href="#">DISCOTECA</a>
+        <a href="#">FONDA</a>
+        <a href="#">BAR</a>
     </div>
 </div>
 
@@ -31,8 +31,8 @@
             <section class="grid" id="grid">
                 {{#each clubs}}
                     <div class="item"
-                         data-categoria={{club_type}}
-                         data-etiquetas="{{name}}{{musical_genres}}{{rooms}}{{neighborhood_city}}{{club_type}}{{keywords}}"
+                         data-categoria="{{club_type}}"
+                         data-etiquetas="{{name}} {{musical_genres}} {{rooms}} {{neighborhood_city}} {{club_type}} {{keywords}}"
                          >
                         <div class="item-contenido">
                             <h1><a href="#">{{name}}</a></h1>
@@ -50,7 +50,7 @@
                 </div>
                 {{/each}}
                 <div class="item"
-                     data-categoria="discotecas"
+                     data-categoria="discoteca"
                      data-etiquetas="industry reggaeton pop tribal house terraza electronica"
                      >
                     <div class="item-contenido">
@@ -67,7 +67,7 @@
                     </div>
                 </div>
                 <div class="item"
-                     data-categoria="discotecas"
+                     data-categoria="discoteca"
                      data-etiquetas="purple reggaeton pop electronica crossover salsa merengue plancha bachata urbano lupe terraza ibiza"
                      >
                     <div class="item-contenido">
@@ -84,7 +84,7 @@
                     </div>
                 </div>
                 <div class="item"
-                     data-categoria="discotecas"
+                     data-categoria="discoteca"
                      data-etiquetas="viva reggaeton pop electronica crossover salsa merengue plancha bachata latin"
                      >
                     <div class="item-contenido">
@@ -101,7 +101,7 @@
                     </div>
                 </div>
                 <div class="item"
-                     data-categoria="bares"
+                     data-categoria="bar"
                      data-etiquetas="jagerhaus jager pop rock"
                      >
                     <div class="item-contenido">
@@ -118,7 +118,7 @@
                     </div>
                 </div>
                 <div class="item"
-                     data-categoria="discotecas"
+                     data-categoria="discoteca"
                      data-etiquetas="oraculo reggaeton pop house plancha clasicos drag poperreo uranus madame melano"
                      >
                     <div class="item-contenido">
@@ -135,7 +135,7 @@
                     </div>
                 </div>
                 <div class="item"
-                     data-categoria="fondas"
+                     data-categoria="fonda"
                      data-etiquetas="ruana juana reggaeton pop electronica crossover salsa merengue bachata vallenato despecho"
                      >
                     <div class="item-contenido">
