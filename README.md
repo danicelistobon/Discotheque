@@ -7,7 +7,7 @@ For the development of this project I used Node JS, Express JS, Nodemon, Handleb
 <br>
 
 ## Landing page
-<img align="center" src="https://im7.ezgif.com/tmp/ezgif-7-a2b0da33a270.gif" width="100%"/>
+<img align="center" src="https://i.imgur.com/eX0bIIV.gif" width="100%"/>
 <br>
 
 ## Home page
