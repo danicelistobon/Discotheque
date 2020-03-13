@@ -38,34 +38,21 @@
                         <h3>Name</h3>
                         <img src="images/Portada2.jpg" alt="" style="width: 280px">
                     </div>
-                    <div class="table">
-                        <h3>Name</h3>
-                        <img src="images/Portada2.jpg" alt="" style="width: 280px">
-                    </div>
                 </div>
                 <div class="cont-created-clubs">
                     <h2>Clubs that I have created</h2>
-                    <div class="table">
-                        <h3>Name</h3>
-                        <img src="images/Portada2.jpg" alt="" style="width: 280px">
-                        <div class="botones">
-                            <button class="edit">Edit</button><button class="delete">Delete</button>
+                    {{#each clubs}}
+                        <div class="table">
+                            <h3>{{name}}</h3>
+                            <img src="images/Portada2.jpg" alt="" style="width: 280px">
+                            <p class="timeago">{{timeago created_at}}</p>
+                            <div class="botones">
+                                <a href="/user/edit/{{id}}" class="edit">Edit</a><a href="/user/delete/{{id}}" class="delete">Delete</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="table">
-                        <h3>Name</h3>
-                        <img src="images/Portada2.jpg" alt="" style="width: 280px">
-                        <div class="botones">
-                            <button class="edit">Edit</button><button class="delete">Delete</button>
-                        </div>
-                    </div>
-                    <div class="table">
-                        <h3>Name</h3>
-                        <img src="images/Portada2.jpg" alt="" style="width: 280px">
-                        <div class="botones">
-                            <button class="edit">Edit</button><button class="delete">Delete</button>
-                        </div>
-                    </div>
+                    {{else}}
+                        <h3 class="no_created">There are not clubs created yet!</h3>
+                    {{/each}}
                 </div>
             </div>
         </div>
