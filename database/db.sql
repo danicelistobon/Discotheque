@@ -6,7 +6,8 @@ GRANT SELECT ON performance_schema.* TO 'disco_dev'@'localhost';
 
 CREATE TABLE users(
     id INT(11) NOT NULL,
-    name VARCHAR(100) NOT NULL,
+    name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
     email VARCHAR(100) NOT NULL,
     password VARCHAR(60) NOT NULL
 );
@@ -15,7 +16,7 @@ ALTER TABLE users
     ADD PRIMARY KEY (id);
 
 ALTER TABLE users
-    MODIFY id INT(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 2;
+    MODIFY id INT(11) NOT NULL AUTO_INCREMENT;
 
 DESCRIBE users;
 
@@ -39,6 +40,6 @@ ALTER TABLE clubs
     ADD PRIMARY KEY (id);
 
 ALTER TABLE clubs
-    MODIFY id INT(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 2;
+    MODIFY id INT(11) NOT NULL AUTO_INCREMENT;
 
 DESCRIBE clubs;
