@@ -5,7 +5,7 @@ const db = require('../database');
 
 router.get('/', async (req, res) => {
     const clubs = await db.query('SELECT * FROM clubs');
-    res.render('clubs/home', {clubs});
+    res.render('clubs/home', {clubs: clubs});
 });
 
 router.get('/add', (req, res) => {
@@ -26,7 +26,7 @@ router.post('/add', async (req, res) => {
         description
     };
     await db.query('INSERT INTO clubs set ?', [newClub]);
-    res.redirect('/clubs');
+    res.redirect('/user');
 });
 
 module.exports = router;
