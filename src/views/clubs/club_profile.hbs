@@ -1,0 +1,55 @@
+<header>
+    <div class="logoc">
+        <a href="/clubs" style="display: block; height: 100%"></a>
+    </div>
+    <h1>Discotheque</h1>
+    <div class="profile">
+        <a href=# style="display: block; height: 80px; width: 80px"></a>
+        <div class="popover">
+            <ul>
+                {{#if user}}
+                <li><a href="/user">Your profile</a></li>
+                <li class="borde"><a href="/clubs/add">Create a club</a></li>
+                <li><a href="/signout">Sign out</a></li>
+                {{else}}
+                <li><a href="/signin">Sign in</a></li>
+                {{/if}}
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="cont-club">
+    <div class="cont-club-img">
+        <img src="/images/Portada2.jpg" alt="" style="width: 700px">
+    </div>
+    <div class="cont-club-info">
+        <h1>{{club.name}}</h1>
+        <!--<button>Follow</button>
+        <p class="fllws">| Followers 3k |</p>-->
+        <h2>Open doors</h2>
+        <p>{{club.open_doors}}</p>
+        <h2>Location</h2>
+        <p>{{club.address}} | {{club.neighborhood_city}}</p>
+        <h2>Description</h2>
+        <p>{{club.description}}</p>
+        <h2>Musical genres</h2>
+        <p>{{club.musical_genres}}</p>
+        <h2>Rooms</h2>
+        <p>{{club.rooms}}</p>
+    </div>
+    <div class="cont-events">
+        <h1>Events </h1>
+        <div class="table">
+            <h2>Event...</h2>
+            <img src="/images/Portada3.jpg" alt="" style="width: 300px">
+        </div>
+    </div>
+</div>
+        
+<footer>
+    <div class="github"><a href="https://github.com/danicelistobon" style="display: block; height: 100%" target="_blank"></a></div>
+    <div class="twitter"><a href="https://twitter.com/danicelistobon" style="display: block; height: 100%" target="_blank"></a></div>
+    <div class="linkedin"><a href="https://www.linkedin.com/in/danicelistobon/" style="display: block; height: 100%" target="_blank"></a></div>
+    <div class="holberton"><a href="https://www.holbertonschool.com" style="display: block; height: 100%" target="_blank"></a></div>
+</footer>
