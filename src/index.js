@@ -2,9 +2,15 @@ const express = require('express');
 const morgan = require('morgan');
 const exphbs = require('express-handlebars');
 const path = require('path');
+const session = require('express-session');
+const mysqlstore = require('express-mysql-session');
+const passport = require('passport');
+
+const { database } = require('./keys');
 
 //inicializar la app
 const app = express();
+require('./lib/passport');
 
 //configuraciones que necesita el servidor express
 app.set('port', process.env.PORT || 4000);
@@ -22,10 +28,18 @@ app.set('view engine', '.hbs');
 app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
+app.use(session({
+    secret: 'discotheque',
+    resave: false,
+    saveUninitialized: false,
+    store: new mysqlstore(database)
+}));
+app.use(passport.initialize());
+app.use(passport.session());
 
 //variables globales
 app.use((req, res, next) => {
-    
+    app.locals.user = req.user;
     next();
 });
 
