@@ -31,4 +31,10 @@ router.post('/add', isNotSignedIn, async (req, res) => {
     res.redirect('/user');
 });
 
+router.get('/club/:id', async (req, res) => {
+    const {id} = req.params;
+    const club = await db.query('SELECT * FROM clubs WHERE id = ?', [id]);
+    res.render('clubs/club_profile', {club: club[0]});
+});
+
 module.exports = router;
