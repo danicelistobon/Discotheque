@@ -16,7 +16,7 @@ ALTER TABLE users
     ADD PRIMARY KEY (id);
 
 ALTER TABLE users
-    MODIFY id INT(11) NOT NULL AUTO_INCREMENT;
+    MODIFY id INT(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 333;
 
 DESCRIBE users;
 
@@ -31,7 +31,7 @@ CREATE TABLE clubs(
     musical_genres VARCHAR(200) NOT NULL,
     keywords VARCHAR(300) NOT NULL,
     description TEXT NOT NULL,
-    user_id INT(11),
+    user_id INT(11) NOT NULL,
     created_at timestamp NOT NULL DEFAULT current_timestamp,
     CONSTRAINT fk_user FOREIGN KEY(user_id) REFERENCES users(id)
 );
@@ -40,6 +40,6 @@ ALTER TABLE clubs
     ADD PRIMARY KEY (id);
 
 ALTER TABLE clubs
-    MODIFY id INT(11) NOT NULL AUTO_INCREMENT;
+    MODIFY id INT(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 333;
 
 DESCRIBE clubs;
