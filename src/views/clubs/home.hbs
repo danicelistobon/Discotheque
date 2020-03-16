@@ -39,7 +39,7 @@
                          data-etiquetas="{{name}} {{musical_genres}} {{rooms}} {{neighborhood_city}} {{club_type}} {{keywords}}"
                          >
                         <div class="item-contenido">
-                            <h1><a href="#">{{name}}</a></h1>
+                            <h1><a href="clubs/club/{{id}}">{{name}}</a></h1>
                             <div class="photo">
                                 <img src="images/portada2.jpg" alt="" width="310px">
                             </div>
@@ -49,7 +49,6 @@
                             <p>{{rooms}}</p>
                             <h2>Location</h2>
                             <p>{{neighborhood_city}}</p>
-                            <p class="timeago">{{timeago created_at}}</p>
                     </div>
                 </div>
                 {{/each}}
@@ -58,7 +57,7 @@
                      data-etiquetas="industry reggaeton pop tribal house terraza electronica"
                      >
                     <div class="item-contenido">
-                        <h1><a href="#">Industry Club</a></h1>
+                        <h1>Industry Club</h1>
                         <div class="photo">
                             <img src="images/Industry.jpg" alt="" width="310px">
                         </div>
