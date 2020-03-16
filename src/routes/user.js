@@ -5,7 +5,7 @@ const db = require('../database');
 const { isNotSignedIn } = require('../lib/auth');
 
 router.get('/', isNotSignedIn, async (req, res) => {
-    const clubs = await db.query('SELECT * FROM clubs');
+    const clubs = await db.query('SELECT * FROM clubs WHERE user_id = ?', [req.user.id]);
     res.render('user/user', {clubs: clubs});
 });
 
