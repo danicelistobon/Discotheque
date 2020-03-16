@@ -23,4 +23,9 @@ router.post('/signup', passport.authenticate('local.signup', {
     failureRedirect: '/signup'
 }));
 
+router.get('/signout', (req, res) => {
+    req.logOut();
+    res.redirect('/');
+});
+
 module.exports = router;
