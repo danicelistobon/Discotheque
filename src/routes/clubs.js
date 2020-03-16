@@ -24,7 +24,8 @@ router.post('/add', isNotSignedIn, async (req, res) => {
         rooms,
         musical_genres,
         keywords,
-        description
+        description,
+        user_id: req.user.id
     };
     await db.query('INSERT INTO clubs set ?', [newClub]);
     res.redirect('/user');
