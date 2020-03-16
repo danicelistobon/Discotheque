@@ -30,7 +30,7 @@
 }
 .cont-user .cont-user-bar h2 {
     text-align: center;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
     padding: 20px;
 }
@@ -49,6 +49,17 @@
 .cont-user .cont-user-bar a:hover {
     color: #00C3FF;
     transition: color 0.8s;
+}
+.cont-user .cont-user-bar p {
+    width: 100%;
+    text-align: center;
+    color: #999999;
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: -25px;
+    margin-bottom: 30px;
+    padding-bottom: 35px;
+    border-bottom: 1px #EBEBEB solid;
 }
 .cont-user li {
     list-style-type: none;
@@ -81,33 +92,31 @@
 .cont-user .table .botones a {
     text-decoration: none;
     padding: 10px 34px;
-    color: #484848;
 }
 .cont-user .table .botones a:hover {
     color: #FFFFFF;
 }
 .cont-user .table .edit {
-    border: 1px #DDDDDD solid;
+    border: 1px #00C3FF solid;
     border-radius: 10px;
     box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.3);
     margin-left: 40px;
 }
-.cont-user .table .edit {
-    color: #484848;
+.cont-user .table a.edit {
+    color: #00C3FF;
 }
 .cont-user .table .edit:hover {
-    border: none;
     background: #00C3FF;
 }
 .cont-user .table .delete {
     padding: 10px;
-    border: 1px #DDDDDD solid;
+    border: 1px #FF0000 solid;
     border-radius: 10px;
     box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.3);
     margin-left: 15px;
 }
-.cont-user .table .delete {
-    color: #484848;
+.cont-user .table a.delete {
+    color: #FF0000;
 }
 .cont-user .table .delete:hover {
     border: none;
