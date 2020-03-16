@@ -41,12 +41,12 @@
     font-weight: 500;
     padding: 20px;
 }
-.cont-user .cont-user-bar a {
+.cont-user .cont-user-bar a, .cont-user-clubs a {
     text-decoration: none;
     color: #484848;
     padding-left: 25px;
 }
-.cont-user .cont-user-bar a:hover {
+.cont-user .cont-user-bar a:hover, .cont-user-clubs a:hover {
     color: #00C3FF;
     transition: color 0.8s;
 }
