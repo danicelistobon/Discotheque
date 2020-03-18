@@ -31,8 +31,10 @@ header .profile {
     float: left;
 }
 header h1 {
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 35px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
 }
 header .popover {
     background-color: #FAFAFA;
@@ -59,7 +61,7 @@ header .popover a {
     color: #484848;
 }
 header .popover a:hover {
-    color: #00C3FF;
+    color: #0097FF;
     transition: color 0.8s;
 }
 header .profile:hover .popover {

@@ -30,15 +30,15 @@
 }
 .cont-user .cont-user-bar h2 {
     text-align: center;
-    font-size: 22px;
-    font-weight: 500;
+    font-size: 25px;
+    font-weight: 300;
     padding: 20px;
 }
 .cont-user .cont-user-clubs h2 {
     width: 100%;
     text-align: center;
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 28px;
+    font-weight: 300;
     padding: 20px;
 }
 .cont-user .cont-user-bar a, .cont-user-clubs a {
@@ -47,7 +47,7 @@
     padding-left: 25px;
 }
 .cont-user .cont-user-bar a:hover, .cont-user-clubs a:hover {
-    color: #00C3FF;
+    color: #0097FF;
     transition: color 0.8s;
 }
 .cont-user .cont-user-bar p {
@@ -66,8 +66,8 @@
     margin-bottom: 15px;
 }
 .cont-user h3 {
-    font-size: 17px;
-    font-weight: 400;
+    font-size: 25px;
+    font-weight: 300;
     text-align: center;
 }
 .cont-user .cont-user-clubs .table {
@@ -97,16 +97,17 @@
     color: #FFFFFF;
 }
 .cont-user .table .edit {
-    border: 1px #00C3FF solid;
+    border: 1px #0097FF solid;
     border-radius: 10px;
     box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.3);
     margin-left: 40px;
 }
 .cont-user .table a.edit {
-    color: #00C3FF;
+    color: #0097FF;
+    transition: color 0.8s;
 }
 .cont-user .table .edit:hover {
-    background: #00C3FF;
+    background: #0097FF;
 }
 .cont-user .table .delete {
     padding: 10px;
@@ -117,6 +118,7 @@
 }
 .cont-user .table a.delete {
     color: #FF0000;
+    transition: color 0.8s;
 }
 .cont-user .table .delete:hover {
     border: none;

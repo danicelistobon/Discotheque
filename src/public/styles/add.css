@@ -5,7 +5,8 @@
 }
 .cont-add-club h1 {
     text-align: center;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 300;
     margin: 0;
     padding: 0;
     color: #484848;
@@ -17,6 +18,7 @@
     padding: 40px 0;
     box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.3);
     border-radius: 15px;
+    font-weight: 300;
 }
 .cont-add-club .form {
     width: 100%;
@@ -26,22 +28,11 @@
     position: relative;
     margin: 30px;
 }
-select {
-    width: 50%;
-    height: 40px;
-    margin: 5px 30px;
-    border: none;
-    border-bottom: 1px #CCCCCC solid;
-    color: #484848;
-    font-size: 17px;
-}
-select:focus {
-    outline: none;
-}
 .cont-add-club input, textarea {
     background: none;
     color: #484848;
     font-size: 17px;
+    font-weight: 300;
     padding: 10px 0;
     display: block;
     width: 100%;
@@ -51,10 +42,12 @@ select:focus {
 .cont-add-club input:focus, textarea:focus {
     outline: none;
     color: #484848;
+    font-weight: 300;
 }
 .cont-add-club label {
     color: #484848;
     font-size: 18px;
+    font-weight: 300;
     position: absolute;
     left: 5px;
     top: 10px;
@@ -64,10 +57,12 @@ select:focus {
 .cont-add-club input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label{
     top: -14px;
     font-size: 12px;
+    font-weight: 300;
     color: #999999;
 }
 .cont-add-club .club_type {
     font-size: 12px;
+    font-weight: 300;
     color: #999999;
     margin: 0 0 0 35px;
 }
@@ -82,7 +77,7 @@ select:focus {
     width: 0%;
     bottom: 0;
     position: absolute;
-    background: linear-gradient(to right, #ffff1c, #00c3ff);
+    background: linear-gradient(to right, #FFFF1C, #0097FF);
     transition: 0.3s ease width;
     left: 0;
 }
@@ -90,9 +85,9 @@ select:focus {
     width: 100%;
 }
 .cont-add-club button {
-    background: #00c3ff;
-    background: -webkit-linear-gradient(to right, #ffff1c, #00c3ff);
-    background: linear-gradient(to right, #ffff1c, #00c3ff);
+    background: #0097FF;
+    background: -webkit-linear-gradient(to right, #FFFF1C, #0097FF);
+    background: linear-gradient(to right, #FFFF1C, #0097FF);
     border: none;
     display: block;
     width: 80%;
@@ -100,6 +95,7 @@ select:focus {
     margin: 10px auto;
     color: #FFFFFF;
     font-size: 20px;
+    font-weight: 300;
     cursor: pointer;
-    box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.3);
+    box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.1);
 }

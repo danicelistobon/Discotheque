@@ -4,7 +4,7 @@
     padding: 0;
     width: 100%;
     height: 100vh;
-    background-color: #00C3FF;
+    background-color: #0097FF;
     background-size: cover;
     background-position: center;
     transition: all .1s ease-in-out;
@@ -60,58 +60,225 @@
 }
 .bg .discover{
     color: #FFFFFF;
-    border: 3px #FF5A5F solid;
-    border-radius: 10px;
-    width: 240px;
-    height: 40px;
+    border: 4px #FFC500 solid;
+    border-radius: 50px;
     font-size: 20px;
     float: right;
-    margin-right: 260px;
+    margin-top: -30px;
+    margin-right: 90px;
 }
 .bg .discover p{
-    margin: 5px;
+    margin: 15px 20px;
     text-align: center;
-    font-weight: 100;
+    font-size: 25px;
+    font-weight: 350;
 }
 .bg .discover a{
     text-decoration: none;
     color: #FFFFFF;
 }
 .bg .discover a:hover{
-    color: #FF5A5F;
+    color: #FFC500;
     transition: color 1s;
 }
 .bg .tagline1{
     font-size: 50px;
-    font-weight: 400;
+    font-weight: 300;
     margin-top: 120px;
     margin-right: 34px;
     color: #FFFFFF;
 }
 .bg .tagline2{
     font-size: 110px;
-    font-weight: 800;
+    font-weight: 700;
     margin-top: -60px;
     margin-right: 30px;
     color: #FFFFFF;
 }
 @keyframes bg{
     0%{
-        background-image: url(../images/Portada1.jpg);
-    }
-    34%{
-        background-image: url(../images/Portada1.jpg);
-    }
-    35%{
         background-image: url(../images/Portada2.jpg);
     }
-    67%{
+    50%{
         background-image: url(../images/Portada2.jpg);
     }
-    68%{
-        background-image: url(../images/Portada3.jpg);
+    51%{
+        background-image: url(../images/Portada4.jpg);
     }
     100%{
-        background-image: url(../images/Portada3.jpg);
+        background-image: url(../images/Portada4.jpg);
     }
+}
+.page2 {
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 0;
+}
+.page2 p {
+    margin: 0;
+    padding: 0;
+}
+.page2 .cont-info-left {
+    width: 55%;
+    height: 100vh;
+}
+.page2 .title-app {
+    font-size: 65px;
+    font-weight: 200;
+    text-align: center;
+    margin: 10px auto 20px;
+    padding: 0;
+}
+.page2 .cont-features {
+    margin: 20px 35px 35px;
+    padding: 0;
+}
+.page2 .cont-info-right {
+    width: 45%;
+    height: 100vh;
+    background: #FFFFFF;
+    background-image: url(../images/phone1.png);
+    background-position: center bottom;
+    background-size: 500px;
+    background-repeat: no-repeat;
+}
+.img-feature {
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    background-image: url(../images/feature1.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    position: relative;
+    transition: all .1s ease-in-out;
+    animation: bg-features 20s infinite linear;
+}
+@keyframes bg-features{
+    0%{
+        background-image: url(../images/feature1.jpg);
+    }
+    25%{
+        background-image: url(../images/feature1.jpg);
+    }
+    26%{
+        background-image: url(../images/feature2.jpg);
+    }
+    50%{
+        background-image: url(../images/feature2.jpg);
+    }
+    51%{
+        background-image: url(../images/feature3.jpg);
+    }
+    75%{
+        background-image: url(../images/feature3.jpg);
+    }
+    76%{
+        background-image: url(../images/feature4.jpg);
+    }
+    100%{
+        background-image: url(../images/feature4.jpg);
+    }
+}
+.cont-footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #0097FF;
+    background: -webkit-linear-gradient(to right, #FFFF1C, #0097FF);
+    background: linear-gradient(to right, #FFFF1C, #0097FF);
+}
+.cont-footer-description {
+    max-width: 1050px;
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.cont-footer-description h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    font-size: 45px;
+    font-weight: 300;
+    text-align: center;
+    color: #282828;
+}
+.cont-footer-description p {
+    margin: 0;
+    padding: 0;
+    font-size: 23px;
+    font-weight: 200;
+    text-align: justify;
+    color: #282828;
+}
+.cont-footer-description .foto {
+    width: 150px;
+    height: 150px;
+    margin: 30px auto 7px;
+    background-image: url(../images/foto.png);
+    background-position: center bottom;
+    background-size: 150px;
+    background-repeat: no-repeat;
+}
+.cont-footer-description .full-stack {
+    text-align: center;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+.cont-footer-icons {
+    margin-top: 40px;
+    padding: 7px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 6px 0 rgba(140, 140, 140, 0.1);
+}
+.cont-footer-icons .github{
+    background-image: url(../images/logo_github.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    align-items: center;
+    margin: 10px;
+}
+.cont-footer-icons .twitter{
+    background-image: url(../images/logo_twitter.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    align-items: center;
+    margin: 10px;
+}
+.cont-footer-icons .linkedin{
+    background-image: url(../images/logo_linkedin.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    align-items: center;
+    margin: 10px;
+}
+.cont-footer-icons .holberton{
+    background-image: url(../images/logo_holberton.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    align-items: center;
+    margin: 10px;
 }

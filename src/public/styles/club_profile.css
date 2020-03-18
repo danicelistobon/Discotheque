@@ -23,8 +23,8 @@
 }
 .cont-club .cont-club-info h1 {
     text-align: center;
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 35px;
+    font-weight: 300;
     width: 70%;
 }
 .cont-club button {
@@ -33,7 +33,7 @@
     width: 90px;
     margin-top: -55px;
     margin-right: 25px;
-    background: #00C3FF;
+    background: #0097FF;
     border: none;
     border-radius: 10px;
     display: block;
@@ -43,13 +43,13 @@
     box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.3);
 }
 .cont-club .cont-club-info h2 {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 22px;
+    font-weight: 300;
 }
 .cont-club .fllws {
     text-align: center;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     color: #ABABAB;
 }
 .cont-club .cont-events {
@@ -64,11 +64,11 @@
     margin-top: 20px;
     margin-bottom: 50px;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 300;
 }
 .cont-club .cont-events h2 {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 22px;
+    font-weight: 300;
     text-align: center;
 }
 .cont-club .cont-events .table {

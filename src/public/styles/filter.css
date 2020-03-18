@@ -17,6 +17,7 @@
     border: none;
     text-align: center;
     font-size: 16px;
+    font-weight: 300;
     background-color: #EBEBEB;
 }
 .cont-filter input:focus {
@@ -32,9 +33,9 @@
     color: #ABABAB;
     margin: 10px 20px;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
 }
 .cont-filter .categories a.activo {
-    color: #484848;
-    font-weight: 500;
+    color: #000000;
+    font-weight: 450;
 }
