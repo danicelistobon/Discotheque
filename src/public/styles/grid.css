@@ -18,7 +18,7 @@
 	margin: 25px;
 	width: 320px;
     border: 1px #DDDDDD solid;
-    border-radius: 10px;
+    border-radius: 30px;
     box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.3);
 }
 .cont-clubs .grid .item-contenido {
@@ -45,7 +45,7 @@
 }
 .cont-clubs .photo img {
     margin: 20px auto;
-    border-radius: 10px;
+    border-radius: 30px;
     box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.6);
 }
 .cont-clubs h1 a {
