@@ -35,7 +35,7 @@
         <p>{{event.description}}</p>
         <div class="cont-reserve">
             <p>Would you like to reserve?</p>
-            <form action="/event/{{id}}" method="POST">
+            <form action="/clubs/event/{{event.id}}" method="POST">
                 <div class="grupo">
                     <input type="text" name="id_card" required><span class="barra"></span>
                     <label for="">Cedula</label>
