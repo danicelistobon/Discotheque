@@ -73,15 +73,17 @@
 .cont-user .cont-user-clubs .table {
     width: 300px;
     border: 1px #DDDDDD solid;
-    border-radius: 10px;
+    border-radius: 30px;
     box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.3);
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
     margin: 0 30px;
     margin-bottom: 60px;
 }
 .cont-user .cont-user-clubs .table img {
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 30px;
     box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.6);
 }
 .cont-user .table .botones {
@@ -95,25 +97,37 @@
 }
 .cont-user .table .botones a:hover {
     color: #FFFFFF;
+    transition: color 0.8s;
+}
+.cont-user .table .create {
+    border: 1px #0097FF solid;
+    border-radius: 50px;
+    box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.2);
+    margin-left: 65px;
+}
+.cont-user .table a.create {
+    color: #0097FF;
+}
+.cont-user .table .create:hover {
+    background: #0097FF;
 }
 .cont-user .table .edit {
-    border: 1px #0097FF solid;
-    border-radius: 10px;
-    box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.3);
+    border: 1px #FFC100 solid;
+    border-radius: 50px;
+    box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.2);
     margin-left: 40px;
 }
 .cont-user .table a.edit {
-    color: #0097FF;
-    transition: color 0.8s;
+    color: #FFC100;
 }
 .cont-user .table .edit:hover {
-    background: #0097FF;
+    background: #FFC100;
 }
 .cont-user .table .delete {
     padding: 10px;
     border: 1px #FF0000 solid;
-    border-radius: 10px;
-    box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.3);
+    border-radius: 50px;
+    box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.2);
     margin-left: 15px;
 }
 .cont-user .table a.delete {
@@ -138,4 +152,7 @@
     border-radius: 10px;
     box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.3);
     padding: 20px;
+}
+.cont-user .info_event {
+    text-align: center;
 }
