@@ -1,0 +1,115 @@
+.cont-event {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-flow: wrap;
+    margin: auto;
+    padding: 0;
+}
+.cont-event cont-event-img {
+    width: 760px;
+    display: flex;
+    justify-content: center;
+}
+.cont-event .cont-event-info {
+    width: 400px;
+    margin: 0;
+    padding: 20px;
+}
+.cont-event img {
+    margin: 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.6);
+}
+.cont-event .cont-event-info h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    width: 100%;
+}
+.cont-event .cont-event-info h2 {
+    font-size: 20px;
+    font-weight: 300;
+}
+.cont-reserve {
+    width: 100%;
+    padding: 20px;
+    margin: 5px;
+    margin-top: 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.4);
+}
+.cont-reserve p {
+    margin: 0;
+    margin-bottom: 15px;
+}
+.cont-reserve .grupo {
+    position: relative;
+    margin: 30px;
+}
+.cont-reserve input {
+    background: none;
+    color: #484848;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 10px 0;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px #CCCCCC solid;
+}
+.cont-reserve input:focus {
+    outline: none;
+    color: #484848;
+    font-weight: 300;
+}
+.cont-reserve label {
+    color: #484848;
+    font-size: 18px;
+    font-weight: 300;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+}
+.cont-reserve input:focus~label, input:valid~label{
+    top: -14px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #999999;
+}
+.cont-reserve .barra {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.cont-reserve .barra::before {
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #FFFF1C, #0097FF);
+    transition: 0.3s ease width;
+    left: 0;
+}
+.cont-reserve input:focus~.barra::before {
+    width: 100%;
+}
+.cont-reserve button {
+    background: #0097FF;
+    background: -webkit-linear-gradient(to right, #FFFF1C, #0097FF);
+    background: linear-gradient(to right, #FFFF1C, #0097FF);
+    border: none;
+    border-radius: 50px;
+    display: block;
+    width: 80%;
+    height: 40px;
+    margin: 10px auto;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.1);
+}
