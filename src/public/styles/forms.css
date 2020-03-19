@@ -97,7 +97,7 @@
     background: #FFFFFF;
     padding: 40px 0;
     box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.6);
-    border-radius: 10px;
+    border-radius: 30px;
     font-weight: 300;
 }
 .bgf .form {
@@ -163,6 +163,7 @@
     background: -webkit-linear-gradient(to right, #FFFF1C, #0097FF);
     background: linear-gradient(to right, #FFFF1C, #0097FF);
     border: none;
+    border-radius: 50px;
     display: block;
     width: 80%;
     height: 40px;
