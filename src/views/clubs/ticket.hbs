@@ -19,14 +19,16 @@
     </div>
 </header>
 
-<div class="cont-ticket">
-    <p class="ticket1">224358</p>
-    <p class="ticket3">Place event</p>
-    <p class="ticket2">Event name</p>
-    <p class="ticket3">Fecha del evento</p>
-    <p class="ticket3">name cliente</p>
-    <p class="ticket4">cedula</p>
-</div>
+{{#each ticket}}
+    <div class="cont-ticket">
+        <p class="ticket1">{{id}}</p>
+        <p class="ticket3">{{place_event}}</p>
+        <p class="ticket2">{{name_event}}</p>
+        <p class="ticket3">{{date_event}}</p>
+        <p class="ticket3">{{full_name}}</p>
+        <p class="ticket4">c.c. {{id_card}}</p>
+    </div>
+{{/each}}
 
 <footer>
     <div class="github"><a href="https://github.com/danicelistobon" style="display: block; height: 100%" target="_blank"></a></div>
