@@ -1,0 +1,34 @@
+.cont-ticket {
+    width: 618px;
+    height: 400px;
+    background-image: url(../images/ticket.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 50px auto;
+    display: flex;
+    flex-flow: column wrap;
+    
+}
+.cont-ticket p {
+    text-align: right;
+    margin: 0;
+    margin-right: 20px;
+    padding: 0;
+}
+.cont-ticket .ticket1 {
+    margin-top: 15px;
+    font-size: 50px;
+    font-weight: 300;
+}
+.cont-ticket .ticket2 {
+    font-size: 40px;
+    font-weight: 300;
+}
+.cont-ticket .ticket3 {
+    font-size: 26px;
+    font-weight: 300;
+}
+.cont-ticket .ticket4 {
+    font-size: 20px;
+    font-weight: 300;
+}
