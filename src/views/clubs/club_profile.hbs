@@ -39,11 +39,19 @@
         <p>{{club.rooms}}</p>
     </div>
     <div class="cont-events">
-        <h1>Events </h1>
-        <div class="table">
-            <h2>Event...</h2>
-            <img src="/images/Portada3.jpg" alt="" style="width: 300px">
-        </div>
+        <h1>Events</h1>
+        {{#each events}}
+            <div class="table">
+                <h2><a href="/clubs/event/{{id}}">{{name}}</a></h2>
+                <img src="/images/Portada3.jpg" alt="" style="width: 300px">
+                <p class="info_event">{{date_event}}</p>
+                <p class="info_event">$ {{cover}}</p>
+                <p class="info_event">{{description}}</p>
+                <p class="timeago">{{timeago created_at}}</p>
+            </div>
+        {{else}}
+                <h3 class="no_created">There are not events created yet!</h3>
+        {{/each}}
     </div>
 </div>
         
