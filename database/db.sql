@@ -66,6 +66,10 @@ DESCRIBE events;
 
 CREATE TABLE tickets(
     id INT(30) NOT NULL,
+    place_event VARCHAR(100) NOT NULL,
+    name_event VARCHAR(50) NOT NULL,
+    date_event VARCHAR(50) NOT NULL,
+    full_name VARCHAR(100) NOT NULL,
     id_card VARCHAR(30) NOT NULL,
     user_id INT(11) NOT NULL,
     created_at timestamp NOT NULL DEFAULT current_timestamp,
