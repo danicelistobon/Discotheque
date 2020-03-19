@@ -1,0 +1,56 @@
+<header>
+    <div class="logoc">
+        <a href="/clubs" style="display: block; height: 100%"></a>
+    </div>
+    <h1>Discotheque</h1>
+    <div class="profile">
+        <a href=# style="display: block; height: 80px; width: 80px"></a>
+        <div class="popover">
+            <ul>
+                {{#if user}}
+                <li><a href="/user">Your profile</a></li>
+                <li class="borde"><a href="/clubs/add">Create a club</a></li>
+                <li><a href="/signout">Sign out</a></li>
+                {{else}}
+                <li><a href="/signin">Sign in</a></li>
+                {{/if}}
+            </ul>
+        </div>
+    </div>
+</header>
+        
+<div class="cont-add-club">
+    <form action="/user/edit/event/{{event.id}}" method="POST">
+        <div class="form">
+            <h1>{{event.name}}</h1>
+            <div class="grupo">
+                <input type="text" value="{{event.name}}" name="name" required><span class="barra"></span>
+                <label for="">Name of event</label>
+            </div>
+            <p class="text_form">Place of event</p>
+            <div class="grupo">
+                <input type="text" value="{{event.place}}" name="place" placeholder="Name of club" required><span class="barra"></span>
+            </div>
+            <p class="text_form">Date event</p>
+            <div class="grupo">
+                <input type="text" value="{{event.date_event}}" name="date_event" placeholder="Month day, year" required><span class="barra"></span>
+            </div>
+            <p class="text_form">Cover</p>
+            <div class="grupo">
+                <input type="text" value="{{event.cover}}" name="cover" placeholder="10.000" required><span class="barra"></span>
+            </div>
+            <div class="grupo">
+                <textarea name="description" rows="5" required>{{event.description}}</textarea><span class="barra"></span>
+                <label for="">Description</label>
+            </div>
+            <button>Save</button>
+        </div>
+    </form>
+</div>
+        
+<footer>
+    <div class="github"><a href="https://github.com/danicelistobon" style="display: block; height: 100%" target="_blank"></a></div>
+    <div class="twitter"><a href="https://twitter.com/danicelistobon" style="display: block; height: 100%" target="_blank"></a></div>
+    <div class="linkedin"><a href="https://www.linkedin.com/in/danicelistobon/" style="display: block; height: 100%" target="_blank"></a></div>
+    <div class="holberton"><a href="https://www.holbertonschool.com" style="display: block; height: 100%" target="_blank"></a></div>
+</footer>
