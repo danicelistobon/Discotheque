@@ -1,8 +1,8 @@
 module.exports = {
     database: {
         host: 'localhost',
-        user: 'root',
-        password: '',
+        user: 'disco_dev',
+        password: 'disco_pwd',
         database: 'disco_dev_db'
     }
 };
