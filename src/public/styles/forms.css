@@ -174,3 +174,22 @@
     cursor: pointer;
     box-shadow: 0 0 6px 0 rgba(59, 59, 59, 0.1);
 }
+@media screen and (max-width: 1000px) {
+    .bgf .cont-d {
+        display: none;
+    }
+    .bgf .cont-logo-form {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-flow: column wrap;
+    }
+}
+@media screen and (max-width: 600px) {
+    .bgf .cont-logof {
+        display: none;
+    }
+    .bgf .table {
+        margin: auto;
+    }
+}
