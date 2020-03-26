@@ -156,3 +156,11 @@
 .cont-user .info_event {
     text-align: center;
 }
+@media screen and (max-width: 630px) {
+    .cont-user .cont-user-bar {
+        display: none;
+    }
+    .cont-user .cont-user-clubs {
+        margin: auto;
+    }
+}
